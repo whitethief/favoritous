@@ -9,18 +9,23 @@ var fs = require('fs'),
     restify = require('restify'),
     server = restify.createServer(),
     config = require('./favoritous.config.json'),
-    load_setup = null,
-    setup_routes = null,
-    start_server = null;
+    load_setup,
+    setup_routes,
+    load_static_route,
+    start_server;
 
 load_setup = function(){
     var deferred = q.defer(),
-        finder = null;
+        finder = null,
+        route_regex = /^.\/\w+\/(\w+)\/((\w*).js)$/g;
 
     finder = findit.find(config.routes_folder);
 
     finder.on('file', function(file, stat){
-        console.log(file);
+        var matches = route_regex.exec(file);
+
+        console.log('Match 1: ' + matches[1]);
+        console.log('Match 2: ' + matches[2]);
     });
 
     finder.on('end', function(){
@@ -30,10 +35,22 @@ load_setup = function(){
     return deferred.promise;
 };
 
+load_static_route = function(){
+    server.get(/\/*.*/, restify.serveStatic({
+        directory: config.static_folder
+    }));
+
+    server.get( /\/images\/*.*/, restify.serveStatic(
+    {
+        directory: config.static_folder + '/' + 'images'
+    }));
+
+};
+
 start_server = function(){
-    // server.listen(config.port, function(){
-    //     console.log('%s listening at %s', server.name, server.url);
-    // });
+    server.listen(config.port, function(){
+         console.log('%s listening at %s', server.name, server.url);
+    });
 };
 
 /******** Starting the Server **********************/
@@ -42,6 +59,6 @@ if(!fs.existsSync(config.routes_folder)){
     throw new Error('Routes folder does not exists!');
 }
 
-load_setup().then(start_server);
+load_setup().then(load_static_route).then(start_server);
 
 /***************************************************/
