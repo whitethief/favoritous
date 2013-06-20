@@ -1,7 +1,7 @@
 // JavaScript Document
 var imgs = $('div.images > ul > li > div.imageContainer > a > img');
 var tabs = $('div.button');
-
+// asldkfhaksdfh
 for(j=0; j<3; j++){
 	var string =(j+1)+'.png'; 
 	$(imgs[j]).attr('src', string);
