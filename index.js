@@ -44,7 +44,6 @@ load_static_route = function(){
     {
         directory: config.static_folder + '/' + 'images'
     }));
-
 };
 
 start_server = function(){

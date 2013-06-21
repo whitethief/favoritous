@@ -1,6 +1,6 @@
 {
     "routes_folder": "./routes",
-    "port":  80,
+    "port":  8080,
     "base_url": "/api",
     "static_folder": "./static"
 }
