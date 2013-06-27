@@ -3,8 +3,8 @@
 }
 body {
   margin: 0px;
-  font-family: Verdana, Geneva, sans-serif;
-  padding-left: 300px;
+  font-family: sans-serif;
+  padding-left: 19.53%;
 }
 img {
   max-width: 100%;
@@ -26,71 +26,82 @@ a:visited {
   text-decoration: inherit;
 }
 a .tab {
-  background-color: #e9eae9;
-  border-bottom: #cccccc solid 1px;
-  border-top: #cccccc solid 1px;
-  font-size: 1.5em;
+ 
+  color: #00a74e;
 }
 a:active .tab {
-  background-color: #ffffff;
-  border-bottom: #00ff00 solid 1px;
-  border-top: #00ff00 solid 1px;
-  border-right: #ffffff solid 1px;
-  font-size: 2.25em;
-  font-weight: bold;
+  background-color: #00a74e;
+  color: #fff;
 }
 .menu {
-  width: 300px;
-  background-color: #f7f7f8;
-  border-right: #00ff00 solid 1px;
+  width: 19.53%;
+  background-color: #363636;
   position: fixed;
   top: 0px;
   bottom: 0px;
   left: 0px;
+  border-right: 5px solid #f2f2f2;
 }
 .logo {
   width: 100%;
   padding-top: 4.5%;
-  padding-left: 4.5%;
+  padding-left: 12%;
   padding-right: 3.5%;
   padding-bottom: 3.5%;
+  margin-top: 3%;
+  margin-bottom: 3.5%;
+}
+.title{
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+.cotitle{
+  color: #00a74e;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.subtitle{
+  color: #00a74e;
+  font-variant: small-caps;
+  font-weight: bold;
 }
 .search {
   width: 100%;
   height: 5.555%;
-  padding-left: 7.745%;
+  padding-left: 12%;
+  margin-top: 3.5%;
+  margin-bottom: 3.5%;
 }
 .searchBar {
   width: 84.51%;
-  background-color: #fff;
+  background-color: #4a4a4a;
   border-radius: 10%;
   padding: 3%;
   font-size: 1em;
 }
-.space {
-  width: 100%;
-  height: 38.8715%;
-}
+
 .tab {
   width: 100%;
   padding-right: 7.74%;
   padding-top: 6%;
   padding-bottom: 6%;
-  text-align: right;
+  padding-left: 12%;
+  font-weight: bold;
 }
 .main {
   overflow: hidden;
 }
 .dayHeader {
-  background-color: #e9eae9;
+  background-color: #363636;
   text-align: center;
-  color: #000007;
+  color: #fff;
   line-height: 1.5em;
 }
 .navButton {
   overflow: hidden;
-  background-color: #cfd1cf;
-  color: #cfd1cf;
+  background-color: #00a74e;
+  color: #fff;
   width: 24px;
 }
 .prev {
@@ -108,17 +119,17 @@ a:active .tab {
   padding-left: 5.3%;
   
 }
-.links h3{
-  text-align: center;
-}
+
 .link{
   width: 100%;
   overflow: hidden;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 .link span {
   font-size: 1em;
-  /*float: left;*/
+  color: #00a74e;
+  font-weight: bold;
 }
 .date {
   font-size: 0.823em;
@@ -137,11 +148,10 @@ a:active .tab {
 .images {
   padding-right: 5.3%;
   padding-left: 2.6%;
-  background-color: #bdffbd;
+  background-color: #ebebeb;
+  border-left: 5px solid #dfdfdf;
 }
-.images h3{
-  text-align: center;
-}
+
 .thumbnail {
   margin: 1%;
   float: left;
@@ -149,5 +159,10 @@ a:active .tab {
 }
 
 .thumbnail .date{
-  float: left;
+  float: none;
+  text-align: center;
+}
+.thumbnail img{
+  border: 3px solid #fff;
+  box-shadow:  5px 5px #dfdfdf;
 }

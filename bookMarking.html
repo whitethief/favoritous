@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <title>Ultimate Bookmarking Tool</title>
     <link href="styles/bmStyles.css" rel="stylesheet"  />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="menu">
         <div class="logo">
-            <img src="images/tempLogo.png">
+            <span class="title">FAVORITO</span><span class="cotitle">US</span>
+            <div class="subtitle"> kick-ass bookmark manager </div>
         </div>
         <div class="search">
-            <input class="searchBar" type="search">
+            
+            <input class="searchBar" type="search" >
             </input>
+            <i class="icon-search"></i>
         </div>
-        <div class="space"></div>
+        
         <a href="#">
             <div class="tab">
-                Recent
+                <i class="icon-time"> </i> Recent (last 24 hours)
             </div>
         </a>
         <a href="#">
             <div class="tab">
-                Archive
+                <i class="icon-folder-close"> </i> Archive
             </div>
         </a>
     </div>
@@ -31,9 +35,9 @@
 
     <div class="main">
         <div class="dayHeader">
-            <a href="#"><div class="navButton prev">previous</div></a>
+            <a href="#"><div class="navButton prev"></div></a>
             TODAY
-            <a href="#"><div class="navButton next">next</div></a>
+            <a href="#"><div class="navButton next"><i class="icon-arrow-down"></i></div></a>
         </div>
         <div class="column links">
             <h3> Links </h3>
