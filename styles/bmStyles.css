@@ -33,6 +33,10 @@ a:active .tab {
   background-color: #00a74e;
   color: #fff;
 }
+h3{
+  font-size: 1.5em;
+  color: #333;
+}
 .menu {
   width: 19.53%;
   background-color: #363636;
@@ -46,32 +50,35 @@ a:active .tab {
   width: 100%;
   padding-top: 4.5%;
   padding-left: 12%;
-  padding-right: 3.5%;
+  padding-right: 12%;
   padding-bottom: 3.5%;
-  margin-top: 3%;
+  margin-top: 3.5%;
   margin-bottom: 3.5%;
 }
 .title{
   color: #fff;
   font-weight: bolder;
-  font-size: 1.5em;
+  font-size: 1.9em;
 }
 .cotitle{
   color: #00a74e;
-  font-size: 1.5em;
+  font-size: 1.9em;
   font-weight: bold;
 }
 .subtitle{
   color: #00a74e;
   font-variant: small-caps;
   font-weight: bold;
+  font-size: 1.1em;
+  line-height: 0px;
+  margin-top: 0px;
 }
 .search {
   width: 100%;
   height: 5.555%;
   padding-left: 12%;
-  margin-top: 3.5%;
-  margin-bottom: 3.5%;
+  margin-top: 29.63px;
+  margin-bottom: 36px;
 }
 .searchBar {
   width: 84.51%;
@@ -90,6 +97,9 @@ a:active .tab {
   font-weight: bold;
 }
 .main {
+  overflow: hidden;
+}
+.day{
   overflow: hidden;
 }
 .dayHeader {
@@ -116,7 +126,7 @@ a:active .tab {
 }
 .links {
   padding-right: 2.6%;
-  padding-left: 5.3%;
+  padding-left: 2.6%;
   
 }
 
@@ -124,12 +134,15 @@ a:active .tab {
   width: 100%;
   overflow: hidden;
   border-bottom: 1px solid #dfdfdf;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
 }
 
 .link span {
   font-size: 1em;
   color: #00a74e;
   font-weight: bold;
+
 }
 .date {
   font-size: 0.823em;
@@ -140,8 +153,7 @@ a:active .tab {
 }
 .description{
   font-size: 0.823em;
-  color: #999999;
- 
+  color: #999999; 
   margin: 0px;
   
 }
