@@ -33,6 +33,8 @@ a:active .tab {
   background-color: #00a74e;
   color: #fff;
 }
+
+
 h3{
   font-size: 1.5em;
   color: #333;
@@ -180,4 +182,7 @@ h3{
 .thumbnail img{
   border: 3px solid #fff;
   box-shadow:  5px 5px #dfdfdf;
+}
+.thumbnail img:hover{
+  border: 3px solid #00a74e;
 }
