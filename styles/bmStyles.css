@@ -4,7 +4,7 @@
 body {
   margin: 0px;
   font-family: 'Open sans', sans-serif;
-  padding-left: 19.53%;
+  padding-left: 281px;
 }
 img {
   max-width: 100%;
@@ -29,6 +29,10 @@ a .tab {
  
   color: #00a74e;
 }
+a .current{
+ 
+  color: #fff;
+}
 a:active .tab {
   background-color: #00a74e;
   color: #fff;
@@ -39,8 +43,12 @@ h3{
   font-size: 1.5em;
   color: #333;
 }
+
+input{
+  outline: none;
+}
 .menu {
-  width: 19.53%;
+  width: 281px;
   background-color: #363636;
   position: fixed;
   top: 0px;
@@ -79,19 +87,31 @@ h3{
 }
 .search {
   width: 100%;
-  height: 5.555%;
+  height: 44.4px;
   padding-left: 12%;
   margin-top: 29.63px;
   margin-bottom: 36px;
 }
 .searchBar {
-  width: 84.51%;
+  width: 70%;
+  background-color: #4a4a4a;
+  border-radius: 1%;
+  padding: 3%;
+  font-size: 1em;
+  color: #888;
+  float: left;
+  border: none;
+ }
+
+ .searchButton {
+  width: 14.51%;
   background-color: #4a4a4a;
   border-radius: 1%;
   padding: 3%;
   font-size: 1em;
   text-align: right;
   color: #888;
+  border: none;
 }
 
 .tab {
@@ -101,6 +121,11 @@ h3{
   padding-bottom: 6%;
   padding-left: 12%;
   font-weight: bold;
+}
+
+.current{
+  background-color: #00a74e;
+  color: #fff;
 }
 .main {
   overflow: hidden;
