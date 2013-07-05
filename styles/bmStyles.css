@@ -44,7 +44,7 @@ input{
   top: 0px;
   bottom: 0px;
   left: 0px;
-  border-right: 5px solid #f2f2f2;
+  box-shadow: 5px 5px #f2f2f2;
 }
 .logo {
   /*width: 100%;*/
@@ -201,4 +201,92 @@ input{
 }
 .thumbnail img:hover{
   border: 3px solid #00a74e;
+}
+@media screen and (max-width: 850px){
+  /*todo entra ne accion cuando es menor a 850*/
+  body{
+    padding-left: 0;
+    padding-top: 105px;
+  }
+
+  .menu{
+    position: absolute;
+    width: 100%;
+    top: 0; right: 0; left: 0; bottom: auto;
+    box-shadow: 2px 2px #f2f2f2;
+  }
+  .logo{
+    height: 70px;
+    width: 30%;
+    float: left;
+    margin: 0;
+    padding: 10px 0 0 30px;
+  }
+  .search{
+    height: 70px;
+    width: 70%;
+    margin: 0;
+    padding: 15px 0 0 30px;
+    float: right;
+  }
+  .searchBar {
+    height: 45px;
+    width: 80%;
+ }
+
+ .searchButton {
+  height: 45px;
+  width: 10%;
+}
+  .tab{
+    float:left;
+    width: 50%;
+    height: 35px;
+    padding: 5px 0 0 30px;
+  }
+  .links{
+    width: 60%;
+  }
+  .images{
+    width: 40%;
+  }
+
+}
+
+@media screen and (max-width: 450px){
+  body{
+    font-size: 14px;
+  }
+  .tab{
+    overflow: hidden;
+    padding-top: 12px;
+  }
+
+  .logo{
+    width: 50%;
+  }
+
+  .search{
+    width: 50%;
+  }
+
+  .searchBar{
+    width: 0;
+    float: right;
+  }
+  .searchButton{
+    width: 45px;
+    float: right;
+    text-align: center;
+  }
+
+  .links{
+    width: 90%;
+  }
+
+  .images{
+    width: 10%;
+    overflow: hidden;
+  }
+
 }
