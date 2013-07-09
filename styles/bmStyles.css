@@ -44,7 +44,7 @@ input{
   top: 0px;
   bottom: 0px;
   left: 0px;
-  box-shadow: 5px 5px #f2f2f2;
+  box-shadow: 5px 5px rgba(121,121,121,0.5);
 }
 .logo {
   /*width: 100%;*/
@@ -197,7 +197,7 @@ input{
 }
 .thumbnail img{
   border: 3px solid #fff;
-  box-shadow:  5px 5px #dfdfdf;
+  box-shadow:  5px 5px rgba(178,178,178,0.8);
 }
 .thumbnail img:hover{
   border: 3px solid #00a74e;
@@ -213,7 +213,7 @@ input{
     position: absolute;
     width: 100%;
     top: 0; right: 0; left: 0; bottom: auto;
-    box-shadow: 2px 2px #f2f2f2;
+    box-shadow: 2px 2px rgba(121,121,121,0.5);
   }
   .logo{
     height: 70px;
