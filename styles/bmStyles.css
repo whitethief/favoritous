@@ -303,3 +303,21 @@ input{
   }
 
 }
+
+@media screen and (max-width: 240px){
+  body{
+    font-size: 12px;
+  }
+  .logo{
+    padding-left: 5px;
+  }
+
+  .links{
+    width: 80%;
+  }
+
+  .images{
+    width: 20%;
+  }
+
+  }
