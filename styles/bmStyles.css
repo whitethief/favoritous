@@ -146,7 +146,6 @@ input{
 .column {
   width: 50%;
   float: left;
-  border: 1px solid black;
 }
 .links {
   padding-right: 2.6%;
