@@ -224,19 +224,19 @@ input{
   }
   .search{
     height: 70px;
-    width: 70%;
+    width: 50%;
     margin: 0;
     padding: 15px 0 0 30px;
     float: right;
   }
   .searchBar {
     height: 45px;
-    width: 80%;
+    width: 70%;
  }
 
  .searchButton {
+  width: 45px;
   height: 45px;
-  width: 10%;
 }
 
 .dayHeader {
@@ -268,6 +268,8 @@ input{
   .tab{
     overflow: hidden;
     padding-top: 12px;
+    padding-left: 15px;
+    padding-right: 5px;
   }
 
   .logo{
@@ -280,11 +282,14 @@ input{
 
   .searchBar{
     width: 0;
+    height: 0;
+    background-color: #363636;
     float: right;
   }
   .searchButton{
     width: 45px;
     float: right;
+    margin-right: 15px;
     text-align: center;
   }
 
