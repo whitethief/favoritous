@@ -37,6 +37,7 @@ h3{
 input{
   outline: none;
 }
+
 .menu {
   width: 281px;
   background-color: #363636;
@@ -44,7 +45,7 @@ input{
   top: 0px;
   bottom: 0px;
   left: 0px;
-  box-shadow: 5px 5px rgba(121,121,121,0.5);
+  box-shadow: 5px 5px rgba(0,0,0,0.24);
 }
 .logo {
   /*width: 100%;*/
@@ -145,15 +146,14 @@ input{
 .column {
   width: 50%;
   float: left;
+  border: 1px solid black;
 }
 .links {
   padding-right: 2.6%;
   padding-left: 2.6%;
-  
 }
 
 .link{
-  /*width: 100%;*/
   overflow: hidden;
   border-bottom: 1px solid #dfdfdf;
   padding-top: 3.5%;
@@ -189,6 +189,7 @@ input{
 .thumbnail {
   margin: 1%;
   float: left;
+  /*no puede tener overflow hidden porque se quitan las sombras*/
 }
 
 .thumbnail .date{
@@ -197,23 +198,23 @@ input{
 }
 .thumbnail img{
   border: 3px solid #fff;
-  box-shadow:  5px 5px rgba(178,178,178,0.8);
+  box-shadow:  5px 5px rgba(0,0,0,0.35);
 }
 .thumbnail img:hover{
   border: 3px solid #00a74e;
 }
 @media screen and (max-width: 850px){
-  /*todo entra ne accion cuando es menor a 850*/
+  /*todo entra en accion cuando es menor a 850*/
   body{
     padding-left: 0;
-    padding-top: 105px;
+    padding-top: 124px;
   }
 
   .menu{
     position: absolute;
     width: 100%;
     top: 0; right: 0; left: 0; bottom: auto;
-    box-shadow: 2px 2px rgba(121,121,121,0.5);
+    box-shadow: 2px 2px rgba(0,0,0,0.24);
   }
   .logo{
     height: 70px;
@@ -238,11 +239,19 @@ input{
   height: 45px;
   width: 10%;
 }
+
+.dayHeader {
+  line-height: 3em;
+}
+
+.navButton {
+  width: 48px;
+}
   .tab{
     float:left;
     width: 50%;
-    height: 35px;
-    padding: 5px 0 0 30px;
+    height: 54px;
+    padding: 15px 0 0 30px;
   }
   .links{
     width: 60%;
