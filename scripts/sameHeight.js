@@ -5,7 +5,11 @@
 
     setup = function setup(){
         divday.each(columnSize);  
-        $(window).resize(columnSize);
+            
+    }
+
+    $(window).load(setup);  
+    $(window).resize(columnSize);
 
         function columnSize(){
             var divlinks = $(this).find('div.links'),
@@ -18,11 +22,7 @@
             } else {
               divimages.height(linksHeight);
             }
-        }      
-    }
-
-    $(window).load(setup);
-    
+        }  
 
 
 

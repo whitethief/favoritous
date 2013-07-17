@@ -1,138 +1,181 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Ultimate Bookmarking Tool</title>
-<link href="styles/main.css" rel="stylesheet"  />
+    <meta charset="UTF-8">
+    <title>Ultimate Bookmarking Tool</title>
+    <link href="styles/bmStyles.css" rel="stylesheet"  />
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
 </head>
 
 <body>
-<div class="everything">
-	<div class="menu">
-    	<div class= "logo" align="center">
-        	<img src="images/temporaryLogo.png"/>
+    <div class="menu">
+        <div class="logo">
+            <img src="images/logo.png">
+            <!--<span class="title">FAVORITO</span><span class="cotitle">US</span>
+            <div class="subtitle"> kick-ass bookmark manager </div>-->
         </div>
-        <div class= "search" align="center">
-
-            	<img src="images/searchIcon.png"/>
-                <input id="searchBarField" name="searchBarField" type="search"  class = "searchBar">
-
+        <div class="search">
+            
+            <input class="searchBar"></input>
+                <button class="searchButton"><i class="icon-search"></i></button>
+            
+            
         </div>
-        <div class="option">
-        Sort by:<br>
-        <div class="button selectText"> Date </div><div class="button selectArrow"><a href="#"> <img src="images/downarrow.png"/></a> </div>
-        </div>
-        <div class="option">
-        Show:<br>
-        <div class="button selectText"> All</div><div class="button selectArrow"><a href="#"><img src="images/downarrow.png"/></a> </div>
-        </div>
-        <div class="space">
-        </div>
-        <a href="#"><div class="tab" align="right">
-        Recent
-        </div></a>
-        <a href="#"><div class="tab" align="right">
-        Archive
-        </div></a>
-
-    </div>
-    <div class="content">
-    	<div class="urls">
-        	<ul>
-            	<li>
-                	<span class="title"><a href="#">Man of Steel movie review</a></span><span class="subtitle">   06/16/13</span><br>
-					<span class="subtitle">www.superman.com</span><br><br>
-
+        <nav>
+            <ul>
+                <li id="recent" class="tab current">
+                    <a href="#">
+                        <i class="icon-time"> </i> Recent (last 24 hours)            
+                    </a>
                 </li>
-                <li>
-                	<span class="title"><a href="#">A Link to the Past</a></span><span class="subtitle">   06/15/13</span><br>
-					<span class="subtitle">www.zelda.com</span><br><br>
-
-                </li>
-                <li>
-                	<span class="title"><a href="#">Another Link</a></span><span class="subtitle">   06/14/13</span><br>
-					<span class="subtitle">www.linkytylink.com</span><br><br>
-
-                </li>
-                <li>
-                	<span class="title"><a href="#">The url youve been looking for</a></span><span class="subtitle">   05/16/13</span><br>
-					<span class="subtitle">www.crazyurls.com</span><br><br>
-
-                </li>
-                <li>
-                	<span class="title"><a href="#">Yay to the list</a></span><span class="subtitle">   05/11/13</span><br>
-					<span class="subtitle">www.yay.com</span><br><br>
-
+                <li id="archive" class="tab">
+                    <a href="#">            
+                        <i class="icon-folder-close"> </i> Archive            
+                    </a>
                 </li>
             </ul>
-        </div>
-        <div class="images">
-        	<ul>
-            	<li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-                <li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-                <li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-                <li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-                <li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-                <li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-                <li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-                <li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-                <li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-                <li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-                <li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-                <li>
-        			<div class="imageContainer">
-            			<a href="#"><img src="images/link.png"/></a><br>
-            		</div>
-                </li>
-            </ul>
-        </div>
+        </nav>
     </div>
-</div>
-<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    
 
+    <div class="main">
+        <div class = "day">
+            <div class="dayHeader">
+                <a href="#"><div class="navButton prev"></div></a>
+                TODAY
+                <a href="#"><div class="navButton next"><i class="icon-arrow-down"></i></div></a>
+            </div>
+            <div class="column links">
+                <h3> Links </h3>
+                    <div class="link">
+                        <span><a href="#">soy un link buena onda</a></span> <p class="date"> 3 min ago </p>
+                        <p class="description"> http://buenaonda.com </p>
+                    </div>
+                    <div class="link">
+                        <span>soy un link buena onda</span> <p class="date"> 3 min ago </p>
+                        <p class="description"> http://buenaonda.com </p>
+                    </div>
+                    <div class="link">
+                        <span>soy un link buena onda</span> <p class="date"> 3 min ago </p>
+                        <p class="description"> http://buenaonda.com </p>
+                    </div>
+                    <div class="link">
+                        <span>soy un link buena onda</span> <p class="date"> 3 min ago </p>
+                        <p class="description"> http://buenaonda.com </p>
+                    </div>
+                    <div class="link">
+                        <span>soy un link buena onda</span> <p class="date"> 3 min ago </p>
+                        <p class="description"> http://buenaonda.com </p>
+                    </div>
+                    <div class="link">
+                        <span>soy un link buena onda</span> <p class="date"> 3 min ago </p>
+                        <p class="description"> http://buenaonda.com </p>
+                    </div>
+                    <div class="link">
+                        <span>soy un link buena onda</span> <p class="date"> 3 min ago </p>
+                        <p class="description"> http://buenaonda.com </p>
+                    </div>
+
+            </div>
+            <div class="column images">
+                 <h3> Images </h3>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class = "day">
+
+            <div class="dayHeader">
+                <a href="#"><div class="navButton prev"><i class="icon-arrow-down icon-rotate-180"></i></div></a>
+                YESTERDAY
+                <a href="#"><div class="navButton next"><i class="icon-arrow-down"></i></div></a>
+            </div>
+            <div class="column links">
+                <h3> Links </h3>
+                    <div class="link">
+                        <span>soy un link buena onda</span> <p class="date"> 3 min ago </p>
+                        <p class="description"> http://buenaonda.com </p>
+                    </div>
+                    <div class="link">
+                        <span>soy un link buena onda</span> <p class="date"> 3 min ago </p>
+                        <p class="description"> http://buenaonda.com </p>
+                    </div>
+            </div>
+            <div class="column images">
+                 <h3> Images </h3>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="http://placehold.it/120x120">
+                    <p class="date"> [date]</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script src="../scripts/tabToggle.js"></script>
+    <script src="../scripts/sameHeight.js"></script>
 </body>
 </html>

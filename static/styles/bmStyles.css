@@ -129,13 +129,13 @@ input{
   background-color: #363636;
   text-align: center;
   color: #fff;
-  line-height: 1.5em;
+  line-height: 54px;
 }
 .navButton {
   overflow: hidden;
   background-color: #00a74e;
   color: #fff;
-  width: 24px;
+  width: 54px;
 }
 .prev {
   float: left;
@@ -146,6 +146,7 @@ input{
 .column {
   width: 50%;
   float: left;
+  border: 1px solid black;
 }
 .links {
   padding-right: 2.6%;
@@ -240,7 +241,7 @@ input{
 }
 
 .dayHeader {
-  line-height: 3em;
+  line-height: 54px;
 }
 
 .navButton {
@@ -287,7 +288,7 @@ input{
     float: right;
   }
   .searchButton{
-    width: 45px;
+    width: 54px;
     float: right;
     margin-right: 15px;
     text-align: center;
