@@ -1,4 +1,5 @@
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
@@ -49,12 +50,12 @@ input{
 }
 .logo {
   /*width: 100%;*/
-  padding-top: 4.5%;
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-bottom: 3.5%;
-  margin-top: 3.5%;
-  margin-bottom: 3.5%;
+  padding-top: 12px;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .title{
   color: #fff;
@@ -146,7 +147,7 @@ input{
 .column {
   width: 50%;
   float: left;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 .links {
   padding-right: 2.6%;
@@ -207,8 +208,9 @@ input{
   /*todo entra en accion cuando es menor a 850*/
   body{
     padding-left: 0;
-    padding-top: 124px;
+    padding-top: 70px;
   }
+
 
   .menu{
     position: absolute;
@@ -218,26 +220,28 @@ input{
   }
   .logo{
     height: 70px;
-    width: 30%;
+    width: 22%;
     float: left;
     margin: 0;
-    padding: 10px 0 0 30px;
+    padding: 16px 0 0 0;
   }
   .search{
     height: 70px;
-    width: 50%;
+    width: 25%;
     margin: 0;
-    padding: 15px 0 0 30px;
-    float: right;
+    padding: 15px 0 0 15px;
+    margin: 0 5px 0 0;
+    float: left;
   }
   .searchBar {
     height: 45px;
-    width: 70%;
+    /*width: 70%;*/
  }
 
  .searchButton {
   width: 45px;
   height: 45px;
+  padding-right: 5px;
 }
 
 .dayHeader {
@@ -249,7 +253,7 @@ input{
 }
   .tab{
     float:left;
-    width: 50%;
+    width: 25%;
     height: 54px;
     padding: 15px 0 0 30px;
   }
@@ -261,24 +265,32 @@ input{
   }
 
 }
-
+@media screen and (max-width: 660px){
+  .searchBar {
+    width: 40%;
+ }
+}
 @media screen and (max-width: 450px){
   body{
     font-size: 14px;
   }
   .tab{
-    overflow: hidden;
+    float: left;
     padding-top: 12px;
     padding-left: 15px;
-    padding-right: 5px;
+    padding-right: 5px;    
+    overflow: hidden;
+    font-size: 1.5em;
   }
 
   .logo{
-    width: 50%;
+    width: 25%;
   }
 
   .search{
-    width: 50%;
+    width: 25%;
+    float: left;
+    margin: 0;
   }
 
   .searchBar{
