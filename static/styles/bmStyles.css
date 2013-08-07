@@ -20,6 +20,7 @@ li {
 }
 nav ul{
   padding: 0px;
+  margin: 0px;
 }
 a {
   color: inherit;
@@ -210,6 +211,9 @@ input{
     padding-left: 0;
     padding-top: 70px;
   }
+  nav{
+    margin: 0;
+  }
 
 
   .menu{
@@ -217,19 +221,20 @@ input{
     width: 100%;
     top: 0; right: 0; left: 0; bottom: auto;
     box-shadow: 2px 2px rgba(0,0,0,0.24);
+    padding-bottom: 0;
   }
   .logo{
     height: 70px;
     width: 22%;
     float: left;
-    margin: 0;
+    margin: 0 2px 0 0;
     padding: 16px 0 0 0;
   }
   .search{
     height: 70px;
     width: 25%;
     margin: 0;
-    padding: 15px 0 0 15px;
+    padding: 7px 0 8px 15px;
     margin: 0 5px 0 0;
     float: left;
   }
@@ -255,7 +260,8 @@ input{
     float:left;
     width: 25%;
     height: 54px;
-    padding: 15px 0 0 30px;
+    padding: 15px 0 0 0px;
+    text-align: center;
   }
   .links{
     width: 60%;
@@ -275,16 +281,14 @@ input{
     font-size: 14px;
   }
   .tab{
-    float: left;
-    padding-top: 12px;
-    padding-left: 15px;
-    padding-right: 5px;    
+    float: left; 
     overflow: hidden;
     font-size: 1.5em;
   }
 
   .logo{
     width: 25%;
+    margin: 0;
   }
 
   .search{
