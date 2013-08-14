@@ -40,11 +40,11 @@
     
 
     <div class="main">
-        <div class = "day">
+        <div  id="1" class = "day">
             <div class="dayHeader">
-                
+                 
                 TODAY
-                <button class="navButton next"><i class="icon-arrow-down"></i></button>
+                <div class="navButton next"><a href="#2"><i class="icon-arrow-down"></i></a></div>
             </div>
             <div class="column links">
                 <h3> Links </h3>
@@ -100,12 +100,11 @@
 
             </div>
         </div>
-        <div class = "day">
+        <div  id="2" class = "day">
 
             <div class="dayHeader">
-                <button class="navButton prev"><i class="icon-arrow-down icon-rotate-180"></i></button>
+                <div class="navButton prev"><a href="#1"><i class="icon-arrow-down icon-rotate-180"></i></a></div>
                 YESTERDAY
-                <button class="navButton next"><i class="icon-arrow-down"></i></button>
             </div>
             <div class="column links">
                 <h3> Links </h3>
@@ -177,6 +176,5 @@
     <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
     <script src="../scripts/tabToggle.js"></script>
     <script src="../scripts/sameHeight.js"></script>
-    <script src="../scripts/nextAndPrevDay.js"></script>
 </body>
 </html>
