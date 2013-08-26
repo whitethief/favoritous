@@ -156,6 +156,11 @@ input{
   width: 50%;
   float: left;
   /*border: 1px solid black;*/
+  /*transition: .3s linear width;*/
+  -webkit-transition: width 0.3s linear;
+  -moz-transition: width 0.3s linear;
+  -o-transition: width 0.3s linear;
+  transition: width 0.3s linear;
 }
 .links {
   padding-right: 2.6%;
