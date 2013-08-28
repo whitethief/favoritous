@@ -146,6 +146,9 @@ input{
   border: none;
   height: 54px;
 }
+.navButton a{
+  display: block;
+}
 .prev {
   float: left;
 }
@@ -155,12 +158,19 @@ input{
 .column {
   width: 50%;
   float: left;
+  overflow: hidden;
   /*border: 1px solid black;*/
-  /*transition: .3s linear width;*/
   -webkit-transition: width 0.3s linear;
   -moz-transition: width 0.3s linear;
   -o-transition: width 0.3s linear;
   transition: width 0.3s linear;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+/*
+  -webkit-perspective: 1000;
+  -webkit-transform:translate3d(0,0,0);
+  -webkit-transform: translateZ(0); */
 }
 .links {
   padding-right: 2.6%;

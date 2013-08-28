@@ -19,6 +19,7 @@
             		
 
             		images.click(function(){
+                       
                         windowWidth = $(window).width();
                         linksWidth = $('.links', $this).width();
                         imagesWidth = $('.images', $this).width();
@@ -30,9 +31,12 @@
     		            	images.width(largeWidth);
     		            	links.width(smallWidth);
                         }
+
+
 		            })
 
             		 links.click(function(){
+                       
                         windowWidth = $(window).width();
                         linksWidth = $('.links', $this).width();
                         imagesWidth = $('.images', $this).width();
