@@ -16,7 +16,7 @@
 	                linksWidth,
             		imagesWidth;
 
-            		
+                               		
 
             		images.click(function(){
                        
@@ -33,7 +33,7 @@
                         }
 
 
-		            })
+		            });
 
             		 links.click(function(){
                        
@@ -48,14 +48,15 @@
     		            	links.width(largeWidth);
     		            	images.width(smallWidth);
                         }
-		            })
+		            });
 
 
         	});
 	         
      	
-    }
+    };
+
 
     $(document).ready(setup);
 
-}(jQuery))
+}(jQuery));

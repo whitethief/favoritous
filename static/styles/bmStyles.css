@@ -117,11 +117,6 @@ input{
   color: #00a74e;
 }
 
-/*borra esta*/
-.selected{
-  border: 1px solid red;
-}
-/**/
 .current{
   background-color: #00a74e;
   color: #fff;
