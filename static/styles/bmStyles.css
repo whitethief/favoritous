@@ -281,10 +281,11 @@ input{
     text-align: center;
   }
   .links{
-    width: 60%;
+    width: 59%;
   }
   .images{
     width: 40%;
+    float: right;
   }
 
 }
@@ -331,7 +332,7 @@ input{
   }
 
   .links{
-    width: 90%;
+    width: 89%;
   }
 
   .images{
